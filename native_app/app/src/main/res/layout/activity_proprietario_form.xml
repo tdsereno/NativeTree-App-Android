@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Form.ProprietariosForm">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relativeLayout"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:layout_width="170dp"
+            android:layout_height="40dp"
+            android:text="Salvar"
+            android:id="@+id/bt_salvar"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="#9EC934"
+            android:textColor="#ffffff"
+            android:textColorHighlight="#ffffff"
+            android:textColorHint="#ffffff"
+            android:textColorLink="#ffffff"
+            android:textSize="16dp"
+            android:allowUndo="false"
+            android:clickable="false"
+            android:longClickable="false" />
+
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/idproprietario"
+            android:hint="Id"
+            android:textSize="16dp"
+            android:textColorHint="#413F24"
+            android:textColorLink="#413F24"
+            android:textColorHighlight="#413F24"
+            android:textColor="#413F24"
+            android:layout_alignBottom="@+id/textView6"
+            android:layout_toLeftOf="@+id/nome"
+            android:layout_toStartOf="@+id/nome" />
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/nome"
+            android:textSize="16dp"
+            android:textColorHint="#413F24"
+            android:textColorLink="#413F24"
+            android:textColorHighlight="#413F24"
+            android:textColor="#413F24"
+            android:layout_below="@+id/textView6"
+            android:layout_toRightOf="@+id/textView18"
+            android:layout_alignRight="@+id/cidade_idcidade"
+            android:layout_alignEnd="@+id/cidade_idcidade" />
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/identificacao"
+            android:textSize="16dp"
+            android:textColorHint="#413F24"
+            android:textColorLink="#413F24"
+            android:textColorHighlight="#413F24"
+            android:textColor="#413F24"
+            android:layout_below="@+id/nome"
+            android:layout_alignLeft="@+id/imageView3"
+            android:layout_alignStart="@+id/imageView3"
+            android:layout_alignRight="@+id/cidade_idcidade"
+            android:layout_alignEnd="@+id/cidade_idcidade" />
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/end_rua"
+            android:textSize="16dp"
+            android:textColorHint="#413F24"
+            android:textColorLink="#413F24"
+            android:textColorHighlight="#413F24"
+            android:textColor="#413F24"
+            android:layout_alignBottom="@+id/textView18"
+            android:layout_alignLeft="@+id/identificacao"
+            android:layout_alignStart="@+id/identificacao"
+            android:layout_alignRight="@+id/cidade_idcidade"
+            android:layout_alignEnd="@+id/cidade_idcidade" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView3"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentStart="false"
+            android:layout_marginLeft="76dp"
+            android:src="@drawable/logo_cor2"
+            android:layout_alignParentRight="false"
+            android:adjustViewBounds="true"
+            android:clickable="false"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentTop="false"
+            android:layout_marginRight="76dp"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="PROPRIETÁRIO"
+            android:id="@+id/textView6"
+            android:layout_below="@+id/imageView3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textSize="18dp"
+            android:textColor="#413F24"
+            android:typeface="normal"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nome:"
+            android:id="@+id/textView16"
+            android:layout_gravity="center_horizontal"
+            android:textSize="16dp"
+            android:textColor="#413F24"
+            android:layout_alignBottom="@+id/nome"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CPF:"
+            android:id="@+id/textView17"
+            android:layout_gravity="center_horizontal"
+            android:textSize="16dp"
+            android:textColor="#413F24"
+            android:layout_alignBottom="@+id/identificacao"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Endereço:"
+            android:id="@+id/textView18"
+            android:layout_gravity="center_horizontal"
+            android:textSize="16dp"
+            android:textColor="#413F24"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cidade:"
+            android:id="@+id/textView19"
+            android:layout_gravity="center_horizontal"
+            android:textSize="16dp"
+            android:textColor="#413F24"
+            android:layout_marginTop="44dp"
+            android:layout_below="@+id/end_rua"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <AutoCompleteTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cidade_idcidade"
+            android:layout_alignBottom="@+id/textView19"
+            android:layout_toRightOf="@+id/textView18"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:layout_width="170dp"
+            android:layout_height="40dp"
+            android:text="Cancelar"
+            android:id="@+id/button5"
+            android:background="#9EC934"
+            android:textColor="#ffffff"
+            android:textColorHighlight="#ffffff"
+            android:textColorHint="#ffffff"
+            android:textColorLink="#ffffff"
+            android:textSize="16dp"
+            android:allowUndo="false"
+            android:clickable="false"
+            android:longClickable="false"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/bt_salvar"
+            android:layout_toEndOf="@+id/bt_salvar"
+            android:layout_marginLeft="23dp"
+            android:layout_marginStart="23dp" />
+
+    </RelativeLayout>
+</RelativeLayout>

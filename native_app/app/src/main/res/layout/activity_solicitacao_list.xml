@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:paddingBottom="@dimen/activity_vertical_margin"
+android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:paddingTop="@dimen/activity_vertical_margin"
+tools:context=".List.SolicitacoesList">
+
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/scrollView"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true"
+    android:fillViewport="false">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView7"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="false"
+        android:layout_marginLeft="76dp"
+        android:src="@drawable/logo_cor2"
+        android:layout_alignParentRight="false"
+        android:adjustViewBounds="true"
+        android:clickable="false"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentTop="false"
+        android:layout_marginRight="76dp"
+        android:layout_marginTop="5dp" />
+</ScrollView>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:text="SOLICITAÇÃO"
+    android:id="@+id/textView9"
+    android:textSize="18dp"
+    android:textColor="#413F24"
+    android:typeface="normal"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="65dp" />
+
+<Button
+    android:layout_width="170dp"
+    android:layout_height="40dp"
+    android:text="Cadastrar "
+    android:id="@+id/btn_cadastrar"
+    android:background="#9EC934"
+    android:textColor="#ffffff"
+    android:textColorHighlight="#ffffff"
+    android:textColorHint="#ffffff"
+    android:textColorLink="#ffffff"
+    android:textSize="16dp"
+    android:allowUndo="false"
+    android:clickable="false"
+    android:longClickable="false"
+    android:layout_marginTop="23dp"
+    android:layout_below="@+id/textView9"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="20dp"
+    android:onClick="startSolicitacoesForm" />
+
+<GridView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/gridView"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:numColumns="3"
+    android:choiceMode="singleChoice"
+    android:layout_below="@+id/btn_cadastrar" />
+
+</RelativeLayout>
+

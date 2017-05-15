@@ -1,0 +1,112 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:gravity="center_horizontal"
+android:orientation="vertical"
+android:paddingBottom="@dimen/activity_vertical_margin"
+android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:paddingTop="@dimen/activity_vertical_margin"
+tools:context="com.example.tiago.anative.LoginForm"
+android:weightSum="1">
+
+<!-- Login progress -->
+<ProgressBar
+    android:id="@+id/login_progress"
+    style="?android:attr/progressBarStyleLarge"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:visibility="gone" />
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="204dp"
+    android:layout_weight="0.37">
+
+    <ImageView
+        android:layout_width="272dp"
+        android:layout_height="128dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/logo_cor2"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:id="@+id/textView3"
+        android:layout_gravity="center_horizontal"
+        android:textSize="30dp"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Por favor, informe seus dados"
+        android:id="@+id/textView4"
+        android:layout_gravity="center_horizontal"
+        android:textSize="16dp" />
+</LinearLayout>
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="0.53"
+    android:background="#9EC934"
+    android:weightSum="1"
+    android:id="@+id/login_form">
+
+    <AutoCompleteTextView
+        android:layout_width="270dp"
+        android:hint="Login"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_login"
+        android:textSize="16dp"
+        android:textColorHint="#ffffff"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="20dp" />
+
+    <EditText
+        android:layout_width="270dp"
+        android:hint="Senha"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_senha"
+        android:layout_gravity="center_horizontal"
+        android:textColorHint="#ffffff"
+        android:textSize="16dp"
+        android:inputType="textPassword" />
+
+    <Button
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:text="Entrar"
+        android:id="@+id/email_sign_in_button"
+        android:textColorHint="#ffffff"
+        android:textColorHighlight="#ffffff"
+        android:textColor="#ffffff"
+        android:textColorLink="#ffffff"
+        android:background="#7EA12A"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:onClick="startSecondActivity" />
+
+    <Button
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:text="Recuperar senha"
+        android:id="@+id/button2"
+        android:textColorHint="#ffffff"
+        android:textColorHighlight="#ffffff"
+        android:textColor="#ffffff"
+        android:textColorLink="#ffffff"
+        android:background="#7EA12A"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp" />
+</LinearLayout>
+
+</LinearLayout>
